@@ -31,7 +31,9 @@ export default defineComponent({
     }
   },
   mounted () {
-    fetch('http://localhost:8080/server/articles.json')
+    const baseUrl = process.env.BASE_URL
+    const jsonurl = (baseUrl + 'server/articles.json')
+    fetch(jsonurl)
       .then(response => response.json())
       .then(data => { this.data = data })
   }
