@@ -1,9 +1,9 @@
 <template>
   <div>
     <div>
-      <h2>{{$route.params.headline}}</h2>
+      <h2>{{$route.params.name}}</h2>
       <p>{{$route.params.date}}</p>
-      <p>{{$route.params.text}}</p>
+      <p>{{$route.params.desc}}</p>
     </div>
   </div>
 </template>

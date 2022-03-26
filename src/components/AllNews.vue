@@ -6,16 +6,17 @@
           name: 'fullnews',
           params: {
             id: article.id,
-            headline: article.headline,
+            name: article.name,
             date: article.date,
-            text: article.text
+            desc: article.desc,
+            shortDesc: article.shortDesc
           }
         }">
-          {{article.headline}}
+          {{article.name}}
         </router-link>
       </h2>
       <p>{{article.date}}</p>
-      <p>{{article.text}}</p>
+      <p>{{article.shortDesc}}</p>
     </div>
   </div>
 </template>
